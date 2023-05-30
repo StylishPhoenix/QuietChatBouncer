@@ -21,7 +21,7 @@ client.on('interactionCreate', async interaction => {
 
     if (commandName === 'asktojoin') {
         if (!interaction.member.voice.channel) {
-            return interaction.reply("You must be in a voice channel to use this command!");
+            return interaction.reply({content: 'You must be in a voice channel to use this command!', ephemeral: true);
         }
 
         const row = new ActionRowBuilder()
