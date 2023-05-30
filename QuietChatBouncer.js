@@ -29,11 +29,11 @@ client.on('interactionCreate', async interaction => {
                 new ButtonBuilder()
                     .setCustomId('agree')
                     .setLabel('I Agree')
-                    .setStyle('SUCCESS'),
+                    .setStyle('Success'),
                 new ButtonBuilder()
                     .setCustomId('disagree')
                     .setLabel('I Do Not Agree')
-                    .setStyle('DANGER'),
+                    .setStyle('Danger'),
             );
 
         await interaction.reply({ content: quietChatRules, components: [row], ephemeral: true });
