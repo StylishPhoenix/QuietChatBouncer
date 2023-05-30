@@ -4,6 +4,14 @@ const { token, quietChatRules, guildId, quietChatId } = require(`./config.json`)
 
 client.once('ready', () => {
     console.log('Ready!');
+    
+  const data = {
+    name: 'asktojoin',
+    description: 'Request to join a specific voice channel',
+  };
+
+  const commands = await client.guilds.cache.get(guildId)?.commands.set([data]);
+  console.log('Slash command registered');
 });
 
 client.on('interactionCreate', async interaction => {
