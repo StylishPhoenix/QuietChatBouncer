@@ -1,0 +1,6 @@
+{
+        "token": "INSERT_TOKEN_HERE",
+        "quietChatRules": "When entering Quiet chat, please remember that this channel is designed for relaxed conversation. Speaking is fine, but please remember that not every gap needs to be filled. If the channel starts to get too full, please move to another chat to allow those who desire smaller discussions to stay.",         
+        "guildId": "734983026773196840",
+        "quietChatId": "1106243402481287270"
+}
