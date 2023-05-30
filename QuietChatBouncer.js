@@ -57,4 +57,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login('your-bot-token');
+client.login(token);
