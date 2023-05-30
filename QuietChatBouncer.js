@@ -1,4 +1,4 @@
-const { Client, Intents, MessageActionRow, MessageButton, CommandInteractionOptionResolver } = require('discord.js');
+const { Client, GatewayIntentBits, MessageActionRow, MessageButton, CommandInteractionOptionResolver } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers] });
 const { token, quietChatRules, guildId, quietChatId } = require(`./config.json`);
 
