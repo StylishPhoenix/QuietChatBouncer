@@ -2,7 +2,7 @@ const { Client, Intents, MessageActionRow, MessageButton, CommandInteractionOpti
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers] });
 const { token, quietChatRules, guildId, quietChatId } = require(`./config.json`);
 
-client.once('ready', () => {
+client.once('ready', async () => {
     console.log('Ready!');
     
   const data = {
